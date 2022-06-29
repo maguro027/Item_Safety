@@ -1,0 +1,23 @@
+name: item_safety
+version: 1.0
+api-version: 1.13
+main: item_safety.plugin.main.Core
+prefix: Item_Safety
+
+commands:
+   item_safety:
+      description: item_safety.
+
+permissions:
+   wp.*:
+      description: WaterPunch
+      children:
+         wp.debug: true
+
+      wp.debug:
+         description: debug permissions
+         default: true
+
+      wp.item_safety:
+         description: item_safety permissions
+         default: true
