@@ -1,12 +1,11 @@
 name: item_safety
-version: 1.0
+version: 1.1
 api-version: 1.13
 main: item_safety.plugin.main.Core
 prefix: Item_Safety
 
 commands:
    item_safety:
-      description: item_safety.
 
 permissions:
    wp.*:

@@ -1,18 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.waterpunch</groupId>
-  <artifactId>Item_Safety</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
-  	<dependency>
-  		<groupId>com.fasterxml.jackson.core</groupId>
-  		<artifactId>jackson-core</artifactId>
-  		<version>2.13.3</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>com.fasterxml.jackson.core</groupId>
-  		<artifactId>jackson-databind</artifactId>
-  		<version>2.13.3</version>
-  	</dependency>
-  </dependencies>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.waterpunch</groupId>
+	<artifactId>Item_Safety</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.9.0</version>
+	</dependency>
+	</dependencies>
 </project>
