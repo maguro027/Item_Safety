@@ -5,7 +5,7 @@ main: item_safety.plugin.main.Core
 prefix: Item_Safety
 
 commands:
-   item_safety:
+   item_safety: null
 
 permissions:
    wp.*:
@@ -17,6 +17,14 @@ permissions:
          description: debug permissions
          default: true
 
-      wp.item_safety:
+      wp.item_safety.*:
          description: item_safety permissions
-         default: true
+         children:
+            wp.item_safety.view: true
+            wp.item_safety.edit: true
+         
+   wp.item_safety.view: 
+      default: true
+   wp.item_safety.edit:
+      default: op 
+      

@@ -18,13 +18,15 @@ public class Core extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		System.out.println("Item Steick Safety Stop");
-		
+
 	}
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 		if (!(cmd.getName().equalsIgnoreCase("item_safety"))) return false;
 		if (!(sender instanceof Player)) return false;
+//		if ((!sender.hasPermission("wp.item_safety.view")) || (!sender.hasPermission("wp.debug"))) return false;
+		if (!(sender.isOp())) return false;
 		item_safety.plugin.main.Main.setinventory((Player) sender);
 
 		return false;

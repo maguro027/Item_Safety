@@ -67,7 +67,7 @@ public class Main {
 		}
 	}
 
-	public static void closeInventory(Player player, Inventory inventory) {
+	public static void closeInventory(Inventory inventory) {
 		Gson gson = new Gson();
 		int conut = -1;
 		items.clear();
@@ -81,10 +81,12 @@ public class Main {
 		saveconfig(gson.toJson(items));
 	}
 
-	@SuppressWarnings("deprecation")
-	public static boolean getitem(Player player) {
-		if (player.getItemInHand().getType() == Material.AIR) return false;
-
+	public static boolean getitem(Player player, Material mate) {
+		if (items.contains(mate)) {
+			
+			player.sendMessage("ÅòaÅ° Åò7This block is not accept debug Stick");
+			return true;
+		}
 		return false;
 	}
 }
