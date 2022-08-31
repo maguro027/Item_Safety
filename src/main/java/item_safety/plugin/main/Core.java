@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import item_safety.plugin.event.Event;
 
 public class Core extends JavaPlugin {
+
 	@Override
 	public void onEnable() {
 		new Event(this);
